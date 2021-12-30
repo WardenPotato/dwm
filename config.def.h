@@ -68,6 +68,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Print,  spawn,          {.v = flameshotcmd } },
 	{ MODKEY,                       XK_p,      spawn,          SHCMD("echo -e \"poweroff\nreboot\nsuspend\" | dmenu -p \"Power Options\" | xargs systemctl") },
 	{ MODKEY,                       XK_v,      spawn,          SHCMD("clipmenu") },
+	{ MODKEY,                       XK_l,      spawn,          SHCMD("dm-tool switch-to-greeter") },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_d,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_a,      focusstack,     {.i = -1 } },
